@@ -10,3 +10,12 @@ body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;bac
 .catalog h1,.episode-page h1{font-size:clamp(35px,5vw,62px);line-height:.98;margin:18px 0 20px}.catalog .intro{font-size:15px;color:#d0d0d0}.static-input{width:100%;background:#222;border:1px solid #555;color:#fff;border-radius:5px;padding:15px;margin:22px 0 12px;font:inherit}.catalog-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:25px 20px;margin-top:20px}.episode-description{margin:50px 0;line-height:1.85;color:#ddd}.episode-description h2{font-size:32px;margin-bottom:20px}.episode-description p{overflow-wrap:anywhere}.episode-page .meta,.catalog .meta{font-size:13px;color:#aaa}.episode-page .player{margin-top:25px}.episode-page .text-link{display:inline-block;margin:30px 0 60px}
 @media(max-width:850px){.css-header{grid-template-columns:1fr auto}.header-tagline{display:none}.css-header nav{grid-column:2}.catalog-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.home-hero{min-height:400px}}
 @media(max-width:650px){.css-header{display:flex;justify-content:space-between;height:90px;padding:0 5%;gap:10px}.header-brand{font-size:31px;letter-spacing:-4px}.css-header nav{gap:12px}.css-header nav a{font-size:10px}.css-header nav .yt{display:none}.home-hero{min-height:390px}.home-hero-content{padding:35px 6%}.home-hero h1{font-size:clamp(35px,9vw,52px)}.home-hero p{font-size:13px}.home-main,.page-shell{padding:12px 20px}.episode-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 12px}.catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 12px}.episode-card h3{font-size:17px}.about{grid-template-columns:1fr}.closing-cta{flex-direction:column;align-items:flex-start}.css-footer{flex-wrap:wrap}}
+
+/* Logo restoration: keep original bitmap intact and remove synthetic wordmark. */
+.css-header{grid-template-columns:1fr auto 1fr}
+.css-header .header-tagline{grid-column:2}
+.css-header nav{grid-column:3}
+.css-footer .footer-logo{display:inline-flex;align-items:center;border:0;flex:none}
+.css-footer .footer-logo img{display:block;width:145px;height:auto;object-fit:contain}
+@media(max-width:850px){.css-header{grid-template-columns:1fr auto}.css-header .header-tagline{grid-column:1;justify-self:start}.css-header nav{grid-column:2}}
+@media(max-width:650px){.css-header .header-tagline{display:flex;font-size:9px;letter-spacing:2px}.css-header nav{margin-left:auto}.css-footer .footer-logo img{width:120px}}
