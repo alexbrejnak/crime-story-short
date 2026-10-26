@@ -52,11 +52,14 @@ def thumbnail(e):return esc(e.get('thumbnail') or 'https://i.ytimg.com/vi/'+e['i
 def card(e):
  return f'''<a class="episode-card" href="{PREFIX}odcinki/{esc(e['id'])}/"><div class="episode-thumb"><img loading="lazy" src="{thumbnail(e)}" alt="Miniatura: {esc(e['title'])}"><span class="episode-play">▶</span></div><h3>{esc(e['title'])}</h3></a>'''
 def main():
- sync();episodes=json.loads(DATA.read_text(encoding='utf-8'))
+  sync()
+  episodes=json.loads(DATA.read_text(encoding='utf-8'))
   unique={e['id']:e for e in episodes}
   episodes=list(unique.values())
   episodes.sort(key=lambda e: e.get('published') or '', reverse=True)
- episodes.sort(key=lambda e: e.get('published') or '', reverse=True)
+  if not episodes:
+    raise RuntimeError('Brak odcinków')
+
  if not episodes:raise RuntimeError('Brak odcinków')
  for e in episodes:
   vid=e['id'];title=e['title'];p=DEST/'odcinki'/vid;p.mkdir(parents=True,exist_ok=True)
