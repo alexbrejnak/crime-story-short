@@ -27,3 +27,38 @@ body > .blood-background {
     center center,
     center calc(50% - 200px);
 }
+
+/* Stopka Crime Story Short */
+.css-footer .footer-logo {
+  display: inline-flex;
+  flex: 0 0 auto;
+  border: 0;
+}
+
+.css-footer .footer-logo img {
+  display: block;
+  width: 145px;
+  max-width: 145px;
+  height: auto;
+}
+
+.css-footer .social-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 22px;
+}
+
+.css-footer .social-links a {
+  display: inline-block;
+  font-size: 11px;
+  white-space: nowrap;
+  border-bottom: 1px solid #666;
+}
+
+@media (max-width: 650px) {
+  .css-footer .footer-logo img {
+    width: 120px;
+    max-width: 120px;
+  }
+}
