@@ -54,6 +54,7 @@ def card(e):
 def main():
  sync();episodes=json.loads(DATA.read_text(encoding='utf-8'))
  unique={e['id']:e for e in episodes};episodes=list(unique.values())
+ episodes.sort(key=lambda e: e.get('published') or '', reverse=True)
  if not episodes:raise RuntimeError('Brak odcinków')
  for e in episodes:
   vid=e['id'];title=e['title'];p=DEST/'odcinki'/vid;p.mkdir(parents=True,exist_ok=True)
