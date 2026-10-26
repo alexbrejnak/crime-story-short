@@ -19,3 +19,11 @@ body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;bac
 .css-footer .footer-logo img{display:block;width:145px;height:auto;object-fit:contain}
 @media(max-width:850px){.css-header{grid-template-columns:1fr auto}.css-header .header-tagline{grid-column:1;justify-self:start}.css-header nav{grid-column:2}}
 @media(max-width:650px){.css-header .header-tagline{display:flex;font-size:9px;letter-spacing:2px}.css-header nav{margin-left:auto}.css-footer .footer-logo img{width:120px}}
+
+/* Przesunięcie wyłącznie grafiki mokrej ulicy */
+body > .blood-background {
+  background-position:
+    center center,
+    center center,
+    center calc(50% - 200px);
+}
