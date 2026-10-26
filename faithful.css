@@ -1,7 +1,7 @@
 /* Faithful CSS refinement for static GitHub Pages preview. */
 :root{--red:#df302e;--paper:#efeeea;--muted:#bdbdb9}
 body{min-height:100vh;background:#090a0b;color:var(--paper)}
-body>.blood-background{position:fixed;inset:0;z-index:-2;pointer-events:none;background:linear-gradient(90deg,rgba(5,6,7,.78),rgba(5,6,7,.34) 44%,rgba(5,6,7,.04) 80%),linear-gradient(to bottom,transparent 38%,rgba(8,9,11,.75) 86%,#08090b),url('street-logo.png') center calc(58% - 200px) / cover no-repeat #08090b
+body>.blood-background{position:fixed;inset:0;z-index:-2;pointer-events:none;background:linear-gradient(90deg,rgba(5,6,7,.78),rgba(5,6,7,.34) 44%,rgba(5,6,7,.04) 80%),linear-gradient(to bottom,transparent 38%,rgba(8,9,11,.75) 86%,#08090b),url('street-logo.png') center calc(58% - 200px) / cover no-repeat #08090b}
 body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(to bottom,transparent,rgba(8,9,11,.24) 75%,rgba(8,9,11,.7))}
 .masthead{overflow:visible;isolation:auto}.css-header{max-width:1400px;height:115px;padding:0 6%;display:grid;grid-template-columns:1fr auto 1fr;gap:20px;background:transparent}.css-header .brand{justify-self:start}.header-brand{font:italic 900 45px Arial,sans-serif;letter-spacing:-5px;color:#fff}.header-tagline{white-space:nowrap;font-size:10px;letter-spacing:3px;justify-self:center}.css-header nav{justify-self:end;display:flex;gap:28px;align-items:center}.css-header nav a{font-size:12px}.css-header nav .yt{padding:15px 20px}
 .home-hero{min-height:465px;display:flex;align-items:flex-start}.home-hero-content{max-width:1400px;width:100%;padding:10px 6% 54px;margin:0 auto}.home-hero h1{font-size:clamp(43px,5.1vw,72px);letter-spacing:-.8px;line-height:.92;margin:22px 0 25px}.home-hero h1 span{color:var(--red)}.home-hero p{line-height:1.8;color:#c7c8c6;font-size:15px}.home-hero .actions{margin-top:30px}.home-hero .button{padding:18px 22px}
@@ -16,7 +16,7 @@ body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;bac
 .css-header .header-tagline{grid-column:2}
 .css-header nav{grid-column:3}
 .css-footer .footer-logo{display:inline-flex;align-items:center;border:0;flex:none}
-.css-footer .footer-logo img{display:block;width:145px;height:auto;object-fit:contain}
+.css-footer .footer-logo img{display:block;width:180px;height:auto;object-fit:contain}
 @media(max-width:850px){.css-header{grid-template-columns:1fr auto}.css-header .header-tagline{grid-column:1;justify-self:start}.css-header nav{grid-column:2}}
 @media(max-width:650px){.css-header .header-tagline{display:flex;font-size:9px;letter-spacing:2px}.css-header nav{margin-left:auto}.css-footer .footer-logo img{width:120px}}
 
